@@ -381,7 +381,8 @@ nav ul li {
 }
 .project-container .btn-link {
     display: block;
-    text-align: center;
+    width: max-content;
+    margin: auto;
 }
 .card-container {
     text-align: center;
