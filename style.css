@@ -1,7 +1,7 @@
 /* Font import */
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Yeseva+One&display=swap'); */
 /* Setting color variable */
 :root {
     --color-text: #ccc;
@@ -22,6 +22,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: avi-title;
+    src: url(assets/fonts/Avigea.ttf);
+}
+@font-face {
+    font-family: ral-body;
+    src: url(assets/fonts/Raleway-VariableFont_wght.ttf);
+}
 
 html,
 body {
@@ -29,8 +37,10 @@ body {
     color: var(--color-text);
     background-color: var(--color-bg);
     height: 100%;
-    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Josefin Sans', sans-serif; */
     /* font-family: 'Ubuntu', sans-serif; */
+    font-family: ral-body, sans-serif;
+    font-style: normal;
     font-size: 62.5%; /* 1rem = 10px (because 62.5% of 16px = 10px) */
 }
 
@@ -85,9 +95,10 @@ button {
 nav ul li {
     display: inline-block;
     padding-block-end: 0.5rem;
-    font-size: 1.7rem;
-    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.6rem;
+    /* font-family: 'Josefin Sans', sans-serif; */
     /* font-family: 'Ubuntu', sans-serif; */
+    font-family: ral-body, sans-serif;
     cursor: pointer;
     position: relative;
 }
@@ -141,16 +152,21 @@ nav ul li {
 }
 .hero-title {
     color: var(--color-tertiary);
-    font-size: 5rem;
-    font-family: 'Yeseva One', serif;
+    font-size: 6.4rem;
+    /* font-family: 'Yeseva One', serif; */
+    font-family: avi-title, serif;
+    line-height: 1;
+    /* letter-spacing: 0.3rem; */
+    font-weight: normal;
 }
 .hero-title span {
     color: var(--color-primary);
 }
 .hero-subtitle {
     font-size: 2rem;
-    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Josefin Sans', sans-serif; */
     /* font-family: 'Ubuntu', sans-serif; */
+    font-family: ral-body, sans-serif;
     margin-block: 3rem;
 }
 .hero-image {
@@ -219,7 +235,10 @@ nav ul li {
 .section-title {
     display: inline-block;
     font-size: 5rem;
-    font-family: 'Yeseva One', serif;
+    /* font-family: 'Yeseva One', serif; */
+    font-family: avi-title, serif;
+    font-weight: normal;
+    line-height: 1.2;
     color: var(--color-primary);
     background-color: var(--color-bg);
     position: relative;
@@ -257,11 +276,11 @@ nav ul li {
     text-align: right;
 }
 .about-title {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     color: var(--color-primary);
 }
 .about-subtitle {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: var(--color-text);
     padding-block-end: 1rem;
 }
@@ -270,7 +289,7 @@ nav ul li {
     color: var(--color-secondary);
 }
 .about-description {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: var(--color-text);
     text-align: justify;
     padding-block: 1rem;
@@ -284,7 +303,7 @@ nav ul li {
     font-size: 1.6rem;
 }
 .about-details h5 {
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 .about-details dt {
     padding-inline-start: 1rem;
@@ -380,10 +399,11 @@ nav ul li {
     min-height: 20rem;
     text-align: left;
     border: 0.1rem solid var(--color-secondary);
-    padding-inline: 1.5rem;
-    padding-block: 1.5rem;
-    font-family: 'Josefin Sans', sans-serif;
+    padding-inline: 1.6rem;
+    padding-block: 1.6rem;
+    /* font-family: 'Josefin Sans', sans-serif; */
     /* font-family: 'Ubuntu', sans-serif; */
+    font-family: ral-body, sans-serif;
     transition: transform 0.2s ease-out;
 }
 
@@ -393,7 +413,7 @@ nav ul li {
 }
 
 .project-card header h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--color-tertiary);
     overflow: hidden;
     text-wrap: nowrap;
@@ -401,7 +421,7 @@ nav ul li {
 }
 
 .project-card p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--color-text);
 }
 
@@ -420,7 +440,8 @@ nav ul li {
     padding: 0.8rem 1.4rem;
     border: 0.1rem solid var(--color-primary);
     font-size: 1.2rem;
-    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: ral-body, sans-serif;
     line-height: 1;
     transition: background 0.2s ease;
 }
@@ -633,7 +654,7 @@ address {
 /* Footer section Style */
 .footer {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-block: var(--section-space);
 }
 .footer::before {
@@ -650,9 +671,9 @@ address {
     margin: 5rem auto;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.2rem;
     text-align: center;
     /* font-family: 'Ubuntu', sans-serif; */
+    /* font-size: 1.2rem; */
 }
 .footer a {
     fill: var(--color-secondary);
