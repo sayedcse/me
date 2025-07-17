@@ -43,12 +43,14 @@ body {
     scroll-behavior: smooth;
     color: var(--color-text);
     background-color: var(--color-bg);
+    max-width: auto;
     height: 100%;
     /* font-family: 'Josefin Sans', sans-serif; */
     /* font-family: 'Ubuntu', sans-serif; */
     font-family: acre-body, sans-serif;
     font-style: normal;
     font-size: 62.5%; /* 1rem = 10px (because 62.5% of 16px = 10px) */
+    overflow-x: hidden;
 }
 
 img,
@@ -92,10 +94,11 @@ button {
     height: 8rem;
     position: sticky;
     top: 0;
-    background-color: var(--color-bg-transparent);
+    background-color: rgba(1, 18, 34, 0.5); /* nearly opaque */
+
     backdrop-filter: blur(1rem);
     /* box-shadow: var(--shadow-bg); */
-    z-index: 1000;
+    z-index: 9999;
 }
 
 /* nav links style */
@@ -231,7 +234,7 @@ nav ul li {
 /* Section Title Decoration style */
 .section-decoration {
     position: relative;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
 }
 .section-decoration::before {
     content: '';
@@ -242,6 +245,7 @@ nav ul li {
     background-color: var(--color-secondary);
     width: 100%;
     height: 0.1rem;
+    z-index: 1;
 }
 .section-title {
     display: inline-block;
@@ -253,7 +257,7 @@ nav ul li {
     color: var(--color-primary);
     background-color: var(--color-bg);
     position: relative;
-    z-index: 99;
+    z-index: 2;
 }
 .--left {
     transform: translateX(20rem);
@@ -428,7 +432,7 @@ nav ul li {
 .project-card header h2 {
     font-size: 2rem;
     color: var(--color-tertiary);
-    overflow: hidden;
+    overflow: clip;
     text-wrap: nowrap;
     text-overflow: ellipsis;
 }
