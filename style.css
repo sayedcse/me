@@ -43,14 +43,14 @@ body {
     scroll-behavior: smooth;
     color: var(--color-text);
     background-color: var(--color-bg);
-    max-width: auto;
-    height: 100%;
+    /* max-width: auto; */
+    /* height: 100%; */ /* this makes sticky nav to misbehave */
     /* font-family: 'Josefin Sans', sans-serif; */
     /* font-family: 'Ubuntu', sans-serif; */
     font-family: acre-body, sans-serif;
     font-style: normal;
     font-size: 62.5%; /* 1rem = 10px (because 62.5% of 16px = 10px) */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */ /* used to fix misbehave nav*/
 }
 
 img,
