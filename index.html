@@ -10,7 +10,7 @@
             href="assets/image/Logo 2.png"
             style="width: 2px; height: 2px"
         /> -->
-        <link rel="icon" type="image/x-icon" href="assets/image/favicon.png" />
+        <link rel="icon" type="image/x-icon" href="assets/image/fav.png" />
         <title>Saidur Sayeed</title>
     </head>
     <body>
@@ -29,40 +29,54 @@
         <!-- Main section -->
         <main class="container" id="home">
             <!-- Hero section -->
-            <section class="hero">
+            <section class="hero container">
                 <header>
                     <h1 class="hero-title"><span>Hello</span> I'm</h1>
                     <h1 class="hero-title">Saidur Sayeed</h1>
                     <p class="hero-subtitle">Web Application Developer</p>
-                    <button class="btn-primary">
-                        <svg>
-                            <rect
-                                x="2.5"
-                                y="2.5"
-                                rx="5"
-                                ry="5"
-                                fill="none"
-                                width="161"
-                                height="40"
-                            />
-                        </svg>
-                        Contact Me
-                    </button>
-                    <a class="btn-link" href="#projects">My Work &rarr;</a>
+                    <aside>
+                        <button class="glassy-button">
+                            <span>Contact Me</span>
+                        </button>
+                        <a class="btn-link" href="#projects">My Work &rarr;</a>
+                    </aside>
                 </header>
                 <figure class="hero-image" alt-text="Hero Image">
-                    <img src="assets/svg/hero.svg" alt="Hero Image" />
+                    <svg height="240" width="240">
+                        <line
+                            class="loader-pointer"
+                            x1="120"
+                            y1="120"
+                            x2="120"
+                            y2="97"
+                        />
+                        <line
+                            class="loader-line"
+                            x1="120"
+                            y1="120"
+                            x2="135"
+                            y2="120"
+                        />
+                        <circle
+                            class="loader-circle"
+                            cx="120"
+                            cy="120"
+                            r="30"
+                        />
+                        <circle class="loader-center" cx="120" cy="120" r="5" />
+                    </svg>
+                    <img src="assets/svg/hero-2.svg" alt="Hero Image" />
                 </figure>
             </section>
             <!-- About me section -->
             <section class="about-me section-decoration" id="profile">
-                <h1 class="section-title --left">Profile</h1>
+                <h2 class="section-title --left">Profile</h2>
                 <article class="about-content-container">
                     <figure class="about-image">
                         <img src="assets/svg/me1.svg" alt="Saidur Sayeed" />
                     </figure>
                     <aside class="about-content">
-                        <h2 class="about-title">About Me</h2>
+                        <h3 class="about-title">About Me</h3>
                         <!-- <h4 class="about-subtitle">Fullstack Developer</h4> -->
                         <p class="about-description">
                             I am a passionate web developer with experience in
@@ -85,7 +99,7 @@
                                 />
                             </svg>
                             <dt>
-                                <h5>Name</h5>
+                                <h6>Name</h6>
                                 <p>Saidur Sayeed</p>
                             </dt>
                             <svg
@@ -101,7 +115,7 @@
                                 />
                             </svg>
                             <dt>
-                                <h5>Education</h5>
+                                <h6>Education</h6>
                                 <p>B.Sc in Computer Science</p>
                             </dt>
                             <svg
@@ -117,7 +131,7 @@
                                 />
                             </svg>
                             <dt>
-                                <h5>Location</h5>
+                                <h6>Location</h6>
                                 <p>Sylhet, Bangladesh</p>
                             </dt>
                         </dl>
@@ -126,7 +140,7 @@
             </section>
             <!-- Skills section -->
             <section class="skills section-decoration" id="skills">
-                <h1 class="section-title --right">Skills</h1>
+                <h2 class="section-title --right">Skills</h2>
                 <!-- Logo icon container -->
                 <section class="skills-logos">
                     <figure class="html">
@@ -652,7 +666,7 @@
             </section>
             <!-- Project Section -->
             <section id="projects" class="projects section-decoration">
-                <h1 class="section-title --left">Projects</h1>
+                <h2 class="section-title --left">Projects</h2>
                 <article class="project-container">
                     <p class="project-sub">
                         Here are some of my projects witch showcase my Skills
@@ -662,7 +676,7 @@
                     <section class="card-container">
                         <article class="project-card">
                             <header>
-                                <h2>Natours</h2>
+                                <h5>Natours</h5>
                             </header>
 
                             <p>
@@ -714,7 +728,7 @@
                         </article>
                         <article class="project-card">
                             <header>
-                                <h2>Exchange Rate Convertor</h2>
+                                <h5>Exchange Rate Convertor</h5>
                             </header>
 
                             <p>
@@ -766,7 +780,7 @@
                         </article>
                         <article class="project-card">
                             <header>
-                                <h2>Seat Booking</h2>
+                                <h5>Seat Booking</h5>
                             </header>
 
                             <p>
@@ -812,7 +826,7 @@
                                             />
                                         </svg>
                                     </span>
-                                    <span class="text"> Live Demo </span>
+                                    <span class="text">Live Demo</span>
                                 </a>
                             </footer>
                         </article>
@@ -827,12 +841,12 @@
             </section>
             <!-- Contact Section -->
             <section class="contact section-decoration" id="contact">
-                <h1 class="section-title --right">Contact</h1>
+                <h2 class="section-title --right">Contact</h2>
                 <article class="contact-container">
                     <aside class="contact-info">
                         <section>
                             <header class="contact-header">
-                                <h3>Lets Talk</h3>
+                                <h5>Lets Talk</h5>
                             </header>
                             <ul class="contact-list">
                                 <li class="contact-item">
@@ -942,7 +956,7 @@
                     </aside>
                     <form class="contact-form" action="#" method="POST">
                         <header class="contact-header">
-                            <h3>Get in Touch</h3>
+                            <h5>Get in Touch</h5>
                         </header>
                         <div class="name-fields">
                             <label for="fname" class="input-label">
@@ -1061,5 +1075,6 @@
             </section>
             <p>&copy; 2025 Saidur Sayeed. All rights reserved.</p>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
