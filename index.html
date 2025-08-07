@@ -11,6 +11,7 @@
             style="width: 2px; height: 2px"
         /> -->
         <link rel="icon" type="image/x-icon" href="assets/image/fav.png" />
+        <script defer src="script.js"></script>
         <title>Saidur Sayeed</title>
     </head>
     <body>
@@ -18,7 +19,7 @@
         <nav class="nav-header container">
             <a class="logo-img" href="/" aria-label="Logo"> </a>
 
-            <ul>
+            <ul class="hidden-right">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#profile">Profile</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -31,10 +32,12 @@
             <!-- Hero section -->
             <section class="hero container">
                 <header>
-                    <h1 class="hero-title"><span>Hello</span> I'm</h1>
-                    <h1 class="hero-title">Saidur Sayeed</h1>
-                    <p class="hero-subtitle">Web Application Developer</p>
-                    <aside>
+                    <h1 class="hero-title hidden"><span>Hello</span> I'm</h1>
+                    <h1 class="hero-title hidden">Saidur Sayeed</h1>
+                    <p class="hero-subtitle hidden">
+                        Web Application Developer
+                    </p>
+                    <aside class="hidden">
                         <button class="glassy-button">
                             <span>Contact Me</span>
                         </button>
@@ -72,10 +75,10 @@
             <section class="about-me section-decoration" id="profile">
                 <h2 class="section-title --left">Profile</h2>
                 <article class="about-content-container">
-                    <figure class="about-image">
+                    <figure class="about-image hidden">
                         <img src="assets/svg/me1.svg" alt="Saidur Sayeed" />
                     </figure>
-                    <aside class="about-content">
+                    <aside class="about-content hidden-up">
                         <h3 class="about-title">About Me</h3>
                         <!-- <h4 class="about-subtitle">Fullstack Developer</h4> -->
                         <p class="about-description">
@@ -142,7 +145,7 @@
             <section class="skills section-decoration" id="skills">
                 <h2 class="section-title --right">Skills</h2>
                 <!-- Logo icon container -->
-                <section class="skills-logos">
+                <section class="skills-logos hidden-up">
                     <figure class="html">
                         <svg viewBox="0 0 128 128">
                             <path
@@ -674,7 +677,7 @@
                     </p>
 
                     <section class="card-container">
-                        <article class="project-card">
+                        <article class="project-card hidden">
                             <header>
                                 <h5>Natours</h5>
                             </header>
@@ -726,7 +729,7 @@
                                 >
                             </footer>
                         </article>
-                        <article class="project-card">
+                        <article class="project-card hidden">
                             <header>
                                 <h5>Exchange Rate Convertor</h5>
                             </header>
@@ -778,7 +781,7 @@
                                 >
                             </footer>
                         </article>
-                        <article class="project-card">
+                        <article class="project-card hidden">
                             <header>
                                 <h5>Seat Booking</h5>
                             </header>
@@ -832,7 +835,7 @@
                         </article>
                     </section>
                     <a
-                        class="btn-link"
+                        class="btn-link hidden-up"
                         href="https://github.com/sayedcse?tab=repositories"
                         target="_blank"
                         >View All Projects &rarr;</a
@@ -843,7 +846,7 @@
             <section class="contact section-decoration" id="contact">
                 <h2 class="section-title --right">Contact</h2>
                 <article class="contact-container">
-                    <aside class="contact-info">
+                    <aside class="contact-info hidden-right">
                         <section>
                             <header class="contact-header">
                                 <h5>Lets Talk</h5>
@@ -954,7 +957,7 @@
                             </ul>
                         </section>
                     </aside>
-                    <form class="contact-form" action="#" method="POST">
+                    <form class="contact-form hidden" action="#" method="POST">
                         <header class="contact-header">
                             <h5>Get in Touch</h5>
                         </header>
@@ -1014,7 +1017,7 @@
         </main>
         <!-- Footer section -->
         <footer class="footer container">
-            <section class="footer-section">
+            <section class="footer-section hidden-up">
                 <aside class="footer-socials">
                     <a href="https://github.com/sayedcse" target="_blank">
                         <svg
@@ -1073,8 +1076,9 @@
                     <span>&#10084;</span>
                 </p>
             </section>
-            <p>&copy; 2025 Saidur Sayeed. All rights reserved.</p>
+            <p class="hidden-up">
+                &copy; 2025 Saidur Sayeed. All rights reserved.
+            </p>
         </footer>
-        <script src="script.js"></script>
     </body>
 </html>

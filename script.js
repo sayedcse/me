@@ -11,3 +11,22 @@ glassyButtons.forEach((button) => {
         button.style.setProperty('--_y-motion', `${offsetY}px`);
     });
 });
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+const hiddenElements_2 = document.querySelectorAll('.hidden-right');
+hiddenElements_2.forEach((el) => observer.observe(el));
+
+const hiddenElements_3 = document.querySelectorAll('.hidden-up');
+hiddenElements_3.forEach((el) => observer.observe(el));
