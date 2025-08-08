@@ -1046,7 +1046,7 @@ address {
     .contact-form {
         width: 85%;
     }
-    .contact-info::after {
+    .contact-container::after {
         display: none;
     }
 }
